@@ -1,0 +1,116 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0 auto;
+	font-family: sans-serif;
+}
+.header
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0px;
+	background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% );
+	
+
+}
+.header h1
+{
+	background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%,  rgba(15,27,49,1) 0%, rgba(0,112,218,1) 90% );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+main
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 150px;
+	background-color: #FFDEE9;
+	background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+}
+.input
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	padding: 20px;
+	background: #fff;
+}
+.input input
+{
+	margin: 20px 0px;
+	outline: none;
+	padding: 7px;
+	border: 0px;
+	border-radius: 5px;
+	background: #bbb;
+	transition: 0.2s ease;
+}
+.input input:focus-within
+{
+	box-shadow: 0px 0px 20px #12c2e994;
+}
+.submit-btn
+{
+	padding: 7px 10px;
+	background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%);
+	border: 0px;
+	text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+	border-radius: 7px;		
+	color: #fff;
+	box-shadow: 0 0 20px #eee;
+	font-weight: 500;
+	text-decoration: none;
+	transition: 0.2s ease;
+}
+.submit-btn:focus-within
+{
+	box-shadow: 0px 0px 20px #12c2e994;	
+}
+
+.submit-btn:hover 
+{
+background-position: right center;
+color: #fff;
+text-decoration: none;
+}
+.input label
+{
+	margin: 0;
+}
+.output
+{
+	display: grid;
+	grid-template-rows: repeat(2, 150px);
+	grid-template-columns: repeat(auto-fit, 1fr);
+	grid-gap: 20px;
+	grid-auto-rows: 150px;
+	background: #fff;
+	width: 100%;
+	padding: 20px;
+}
+.output div table
+{
+	text-align: center;
+	border: 1px solid;
+}
+.output div table td
+{
+	padding: 7px;
+}
+.output div table th
+{
+	padding: 10px;
+}
+.output div table tr,
+.output div table th
+{
+	border-bottom: 1px solid #111;
+}
+.output div table tr:last-child
+{
+	border-bottom: 0px;	
+}
